@@ -43,3 +43,6 @@ Switch# write memory
 
 ## Expected Result
 - PCs cannot ping each other (VLAN isolation)
+
+
+📦 [Download the Packet Tracer Lab File](./VLAN_Basics.pkt)
