@@ -10,14 +10,29 @@ Configure VLANs and assign ports on a Cisco switch.
 - PC1 on VLAN 20 (IT)
 
 ## Switch Commands
-```
-Switch> enable
-Switch# configure terminal
-Switch(config)# vlan 10
-Switch(config-vlan)# name HR
-Switch(config)# vlan 20
-Switch(config-vlan)# name IT
-```
+<pre> ```bash Switch> enable 
+  Switch# configure terminal 
+  ! Create VLAN 10 and name it HR 
+  Switch(config)# vlan 10 
+  Switch(config-vlan)# name HR 
+  Switch(config-vlan)# exit 
+  ! Create VLAN 20 and name it IT 
+  Switch(config)# vlan 20 
+  Switch(config-vlan)# name IT 
+  Switch(config-vlan)# exit 
+  ! Assign FastEthernet 0/1 to VLAN 10 
+  Switch(config)# interface fastEthernet 0/1 
+  Switch(config-if)# switchport mode access 
+  Switch(config-if)# switchport access vlan 10 
+  Switch(config-if)# exit 
+  ! Assign FastEthernet 0/2 to VLAN 20 
+  Switch(config)# interface fastEthernet 0/2 
+  Switch(config-if)# switchport mode access 
+  Switch(config-if)# switchport access vlan 20 
+  Switch(config-if)# exit 
+  ! Save the configuration 
+  Switch(config)# end 
+  Switch# write memory ``` </pre>
 
 
 ## PC IPs
