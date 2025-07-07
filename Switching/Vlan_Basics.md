@@ -10,7 +10,8 @@ Configure VLANs and assign ports on a Cisco switch.
 - PC1 on VLAN 20 (IT)
 
 ## Switch Commands
-'''Switch> enable
+'''
+Switch> enable
 Switch# configure terminal
 Switch(config)# vlan 10
 Switch(config-vlan)# name HR
