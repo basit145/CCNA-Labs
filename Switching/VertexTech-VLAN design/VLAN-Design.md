@@ -108,4 +108,9 @@ PC4 → PC7  → Ping fail
 - Devices in different VLANs cannot communicate without routing (e.g. Router-on-a-Stick).
 - Helps improve network security, scalability, and performance.
 
+---
+
+## 📦 Download Packet Tracer File
+
+[Download VertexTech VLAN Lab (.pkt)](./Switching/VertexTech_VLAN_Design.pkt)
 
