@@ -45,4 +45,4 @@ Switch# write memory
 - PCs cannot ping each other (VLAN isolation)
 
 ## Download
-📦 [Download the Packet Tracer Lab File](./VLAN_Basics.pkt)
+📦 [Download the Packet Tracer Lab File](./VLAN_Basic_lab.pkt)
