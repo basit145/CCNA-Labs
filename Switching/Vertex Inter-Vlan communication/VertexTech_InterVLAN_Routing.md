@@ -112,3 +112,12 @@ ping from PC2 → 192.168.10.10 (PC2)
 - Each subinterface on the router handles one VLAN
 - dot1Q encapsulation tags traffic with VLAN ID
 - This method saves hardware by using only one physical router interface
+
+
+---
+
+---
+
+## 📦 Download Packet Tracer Lab File
+
+[Download VertexTech Inter-VLAN Routing Lab (.pkt)](./Routing/VertexTecn-Inter%20VLAN_routing_LAB.pkt)
