@@ -34,13 +34,13 @@ After implementing VLANs at **VertexTech Solutions – Peshawar**, the HR and IT
 ---
 
 ## 🧱 Topology
-
+```
 PC0 (HR) → Fa0/1 -----+
 |
 Switch ---- G0/1 (Trunk) ---- Router G0/0
 |
 PC2 (IT) → Fa0/3 -----+
-
+```
 
 ---
 
