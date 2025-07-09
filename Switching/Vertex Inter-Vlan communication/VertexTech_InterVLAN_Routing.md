@@ -37,9 +37,9 @@ After implementing VLANs at **VertexTech Solutions – Peshawar**, the HR and IT
 
 PC0 (HR) → Fa0/1 -----+
 |
-Switch ---- Fa0/24 (Trunk) ---- Router G0/0
+Switch ---- G0/1 (Trunk) ---- Router G0/0
 |
-PC1 (IT) → Fa0/2 -----+
+PC2 (IT) → Fa0/3 -----+
 
 
 ---
@@ -57,7 +57,7 @@ Switch> enable
 Switch# configure terminal
 
 ! Trunk port to router
-interface fa0/24
+interface G0/1
  switchport mode trunk
 
 end
@@ -94,15 +94,15 @@ ping 192.168.10.10
 ping 192.168.20.10
 
 ! On PCs:
-ping from PC0 → 192.168.20.10 (PC1)
-ping from PC1 → 192.168.10.10 (PC0)
+ping from PC0 → 192.168.20.10 (PC0)
+ping from PC2 → 192.168.10.10 (PC2)
 ```
 ✅ If both pings work → Inter-VLAN routing is successful.
 
 ## ❌ Troubleshooting Tips
 ```
 - If ping fails:
-  → Check trunk port on switch (fa0/24)
+  → Check trunk port on switch (g0/1)
   → Verify subinterface IDs match VLANs
   → Confirm PC IPs & gateways are correct
   → Ensure no shutdown is applied on G0/0
